@@ -1,0 +1,2818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おばんざい郁 -aya- | 徳島・鷹匠町</title>
+  <meta name="description" content="徳島市鷹匠町レンガ横丁ビル1F。日替わりおばんざいと家庭料理の居酒屋。カウンター7席・2階座敷あり。カラオケ完備。深夜26時まで。おひとり様歓迎。">
+  <meta property="og:title" content="裏路地に灯る、母ちゃんの台所。おばんざい郁 -aya-">
+  <meta property="og:description" content="徳島・鷹匠町の裏路地で、ひとりで切り盛りする母ちゃんの本格おばんざい居酒屋。日替わりの料理と温かい空気が、今夜も待っています。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-jMomh_0ho_s?w=1200&h=630&fit=crop&crop=entropy&auto=format&q=80">
+  <meta name="keywords" content="徳島 おばんざい,徳島 居酒屋 ひとり飲み,鷹匠町 居酒屋,徳島 裏路地 酒場,徳島 深夜 居酒屋,徳島 家庭料理 居酒屋">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@300;400;500;600;700&family=Zen+Old+Mincho:wght@400;500;600;700;900&family=Zen+Kurenaido&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+JP:wght@300;400;500&family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Restaurant", "LocalBusiness"],
+    "name": "おばんざい郁 -aya-",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "鷹匠町1丁目29番地 レンガ横丁ビル1F",
+      "addressLocality": "徳島市",
+      "addressRegion": "徳島県",
+      "addressCountry": "JP"
+    },
+    "telephone": "080-3532-1398",
+    "servesCuisine": "おばんざい・家庭料理"
+  }
+  </script>
+  <style>
+    /* ============================================
+       CSS Custom Properties — カラーシステム
+       ============================================ */
+    :root {
+      --font-display-jp:   'Shippori Mincho', 'Noto Serif JP', serif;
+      --font-serif-jp:     'Noto Serif JP', 'Shippori Mincho', serif;
+      --font-old-mincho:   'Zen Old Mincho', serif;
+      --font-kurenaido:    'Zen Kurenaido', serif;
+      --font-display-en:   'Cormorant Garamond', 'DM Serif Display', serif;
+      --font-body-jp:      'Noto Sans JP', sans-serif;
+      --font-rounded-jp:   'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+
+      --bg-deepest:    #1c1510;
+      --bg-mid:        #2a1f17;
+      --bg-card:       #3a2d22;
+      --primary:       #d4682a;
+      --primary-light: #e8854a;
+      --primary-dark:  #a84e1e;
+      --vermillion:    #c0392b;
+      --accent-karashi: #c8a840;
+      --accent-matcha:  #4a6741;
+      --accent-matcha-light: #6b8f62;
+      --accent-glow:   #f5a623;
+      --text-primary:  #f5f0e8;
+      --text-secondary: #c8b89a;
+      --text-muted:    #7a6a58;
+      --cream:         #faf6ef;
+      --cream-mid:     #f0e8d8;
+      --amber:         #8b6914;
+      --loader-bg:     #1c1510;
+      --loader-bar:    #d4682a;
+      --loader-text:   #f5f0e8;
+      --cursor-ring:   rgba(212, 104, 42, 0.6);
+      --cursor-dot:    #d4682a;
+      --cursor-hover:  rgba(212, 104, 42, 0.25);
+      --border-subtle: rgba(245, 240, 232, 0.08);
+      --border-mid:    rgba(245, 240, 232, 0.18);
+      --border-accent: rgba(212, 104, 42, 0.4);
+      --shadow-soft:   0 4px 24px rgba(0, 0, 0, 0.45);
+      --glow-lantern:  0 0 40px rgba(212, 104, 42, 0.35), 0 0 80px rgba(212, 104, 42, 0.18);
+      --shadow-card:   0 8px 40px rgba(0, 0, 0, 0.6);
+      --shadow-card-hover: 0 20px 60px rgba(0, 0, 0, 0.75), 0 0 30px rgba(212, 104, 42, 0.2);
+    }
+
+    /* ============================================
+       Reset & Base
+       ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-deepest);
+      color: var(--text-primary);
+      font-family: var(--font-body-jp);
+      font-weight: 300;
+      line-height: 1.9;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    /* ============================================
+       技法D — ローダー
+       ============================================ */
+    #loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-color: var(--loader-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem;
+      transition:
+        opacity    0.8s ease-out 0.3s,
+        visibility 0s   linear  1.1s,
+        clip-path  1.1s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+      clip-path: inset(0 0 0% 0);
+      will-change: clip-path, opacity;
+      animation: loaderGlow 3s ease-in-out infinite;
+    }
+
+    #loader.is-done {
+      clip-path: inset(0 0 100% 0);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .loader__title {
+      font-family: var(--font-old-mincho);
+      font-size: clamp(6rem, 20vw, 14rem);
+      color: var(--loader-text);
+      letter-spacing: 0.1em;
+      text-align: center;
+      animation: loaderReveal 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+      will-change: opacity, transform;
+      line-height: 1;
+    }
+
+    .loader__subtitle {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      color: var(--text-secondary);
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: loaderReveal 1.2s ease-out 0.7s both;
+    }
+
+    .loader__bar {
+      width: clamp(120px, 20vw, 200px);
+      height: 1px;
+      background-color: rgba(245, 240, 232, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .loader__bar::after {
+      content: '';
+      position: absolute;
+      inset: 0 100% 0 0;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--loader-bar) 40%,
+        var(--accent-glow) 60%,
+        var(--loader-bar) 80%,
+        transparent
+      );
+      animation: loaderBar 2.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+      will-change: inset;
+    }
+
+    @keyframes loaderReveal {
+      0%   { opacity: 0; transform: translateY(12px); filter: blur(4px); }
+      60%  { opacity: 0.8; filter: blur(1px); }
+      100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+    }
+
+    @keyframes loaderBar {
+      0%   { inset: 0 100% 0 0; }
+      100% { inset: 0 0% 0 0; }
+    }
+
+    @keyframes loaderGlow {
+      0%, 100% { box-shadow: inset 0 0 120px rgba(212, 104, 42, 0.06); }
+      50%       { box-shadow: inset 0 0 120px rgba(212, 104, 42, 0.12); }
+    }
+
+    /* ============================================
+       技法E — カスタムカーソル
+       ============================================ */
+    @media (pointer: fine) {
+      html, a, button { cursor: none; }
+      *, *::before, *::after { cursor: none !important; }
+
+      #cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        pointer-events: none;
+        mix-blend-mode: normal;
+      }
+
+      .cursor__ring {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1.5px solid var(--cursor-ring);
+        background-color: transparent;
+        transition:
+          width       0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          height      0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          top         0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          left        0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          background-color 0.5s ease-out,
+          border-color     0.4s ease-out,
+          opacity          0.4s ease-out;
+        will-change: transform;
+      }
+
+      .cursor__dot {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--cursor-dot);
+        transition:
+          width  0.2s ease-out,
+          height 0.2s ease-out,
+          top    0.2s ease-out,
+          left   0.2s ease-out,
+          opacity 0.3s ease-out;
+        will-change: transform;
+      }
+
+      body.cursor-hover .cursor__ring {
+        width: 64px;
+        height: 64px;
+        top: -32px;
+        left: -32px;
+        background-color: var(--cursor-hover);
+        border-color: rgba(212, 104, 42, 0.8);
+        box-shadow: 0 0 16px rgba(212, 104, 42, 0.3), inset 0 0 16px rgba(245, 166, 35, 0.15);
+      }
+
+      body.cursor-hover .cursor__dot {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      body.cursor-click .cursor__ring {
+        width: 28px;
+        height: 28px;
+        top: -14px;
+        left: -14px;
+        background-color: rgba(212, 104, 42, 0.4);
+        transition-duration: 0.12s;
+      }
+
+      body.cursor-hidden .cursor__ring,
+      body.cursor-hidden .cursor__dot { opacity: 0; }
+    }
+
+    /* ============================================
+       Header
+       ============================================ */
+    #site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      padding: 1.2rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.6s ease-out, padding 0.4s ease-out, backdrop-filter 0.6s ease-out;
+    }
+
+    #site-header.scrolled {
+      background: rgba(28, 21, 16, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.8rem 5vw;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .header__logo {
+      font-family: var(--font-old-mincho);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 0.1em;
+      line-height: 1;
+    }
+
+    .header__logo span {
+      display: block;
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.6rem;
+      letter-spacing: 0.4em;
+      color: var(--text-secondary);
+      margin-top: 0.2rem;
+      font-weight: 300;
+    }
+
+    .header__nav {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .header__nav {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        list-style: none;
+      }
+
+      .header__nav a {
+        font-family: var(--font-display-jp);
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        color: var(--text-secondary);
+        transition: color 0.4s ease-out;
+        position: relative;
+      }
+
+      .header__nav a::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 100%;
+        height: 1px;
+        background: var(--primary);
+        transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .header__nav a:hover {
+        color: var(--text-primary);
+      }
+
+      .header__nav a:hover::after {
+        right: 0;
+      }
+    }
+
+    .header__instagram {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .header__instagram {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-display-en);
+        font-style: italic;
+        font-size: 0.78rem;
+        letter-spacing: 0.25em;
+        color: var(--primary);
+        border: 1px solid var(--border-accent);
+        padding: 0.5rem 1.2rem;
+        border-radius: 2px;
+        transition: background 0.4s ease-out, color 0.4s ease-out;
+      }
+
+      .header__instagram:hover {
+        background: var(--primary);
+        color: var(--cream);
+      }
+    }
+
+    .header__hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 0.4rem;
+      z-index: 1001;
+    }
+
+    @media (min-width: 1024px) {
+      .header__hamburger { display: none; }
+    }
+
+    .header__hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--text-primary);
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-out;
+      transform-origin: center;
+    }
+
+    .header__hamburger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .header__hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .header__hamburger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ============================================
+       Mobile Menu
+       ============================================ */
+    #mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 950;
+      background: rgba(28, 21, 16, 0.98);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      clip-path: inset(0 0 100% 0);
+      transition: clip-path 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+      pointer-events: none;
+    }
+
+    #mobile-menu.is-open {
+      clip-path: inset(0 0 0% 0);
+      pointer-events: all;
+    }
+
+    .mobile-menu__nav {
+      list-style: none;
+      text-align: center;
+    }
+
+    .mobile-menu__nav li {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.1s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.17s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.24s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.31s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.38s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.45s; }
+    #mobile-menu.is-open .mobile-menu__nav li:nth-child(7) { opacity: 1; transform: none; transition-delay: 0.52s; }
+
+    .mobile-menu__nav a {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.4rem, 5vw, 2rem);
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: 0.15em;
+      padding: 0.7rem 2rem;
+      display: block;
+      transition: color 0.3s ease-out;
+    }
+
+    .mobile-menu__nav a:hover {
+      color: var(--primary);
+    }
+
+    .mobile-menu__footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-out 0.55s;
+    }
+
+    #mobile-menu.is-open .mobile-menu__footer {
+      opacity: 1;
+    }
+
+    .mobile-menu__footer p {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.75rem;
+      letter-spacing: 0.4em;
+      color: var(--text-muted);
+    }
+
+    /* ============================================
+       技法A — clip-path リビール
+       ============================================ */
+    [data-clip] {
+      overflow: hidden;
+      display: block;
+    }
+
+    [data-clip] .clip-inner {
+      display: block;
+      clip-path: inset(0 0 100% 0);
+      transform: translateY(16px);
+      opacity: 0;
+      transition:
+        clip-path   1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform   1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity     0.9s ease-out;
+      will-change: clip-path, transform, opacity;
+    }
+
+    [data-clip].is-visible .clip-inner {
+      clip-path: inset(0 0 0% 0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    [data-clip] .clip-inner:nth-child(1) { transition-delay: 0s; }
+    [data-clip] .clip-inner:nth-child(2) { transition-delay: 0.18s; }
+    [data-clip] .clip-inner:nth-child(3) { transition-delay: 0.36s; }
+    [data-clip] .clip-inner:nth-child(4) { transition-delay: 0.54s; }
+
+    [data-clip="horizontal"] .clip-inner {
+      clip-path: inset(0 100% 0 0);
+      transform: none;
+      transition:
+        clip-path   1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity     1.0s ease-out;
+    }
+
+    [data-clip="horizontal"].is-visible .clip-inner {
+      clip-path: inset(0 0% 0 0);
+      opacity: 1;
+    }
+
+    /* ============================================
+       技法B — スクロールリビール
+       ============================================ */
+    [data-warp] {
+      opacity: 0;
+      transform: translateY(32px);
+      transition:
+        opacity   1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: opacity, transform;
+    }
+
+    [data-warp].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    [data-warp][data-delay="1"] { transition-delay: 0.15s; }
+    [data-warp][data-delay="2"] { transition-delay: 0.30s; }
+    [data-warp][data-delay="3"] { transition-delay: 0.45s; }
+    [data-warp][data-delay="4"] { transition-delay: 0.60s; }
+    [data-warp][data-delay="5"] { transition-delay: 0.75s; }
+
+    [data-warp="scale"] {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+      transition:
+        opacity   1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    [data-warp="scale"].is-visible {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    [data-warp="left"] {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition:
+        opacity   1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    [data-warp="left"].is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    [data-warp="right"] {
+      opacity: 0;
+      transform: translateX(28px);
+      transition:
+        opacity   1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    [data-warp="right"].is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    [data-fade] {
+      opacity: 0;
+      transition: opacity 1.4s ease-out;
+      will-change: opacity;
+    }
+
+    [data-fade].is-visible {
+      opacity: 1;
+    }
+
+    [data-fade][data-delay="1"] { transition-delay: 0.20s; }
+    [data-fade][data-delay="2"] { transition-delay: 0.40s; }
+    [data-fade][data-delay="3"] { transition-delay: 0.60s; }
+
+    /* ============================================
+       技法C — ワードスタガー
+       ============================================ */
+    [data-stagger] {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2em;
+    }
+
+    [data-stagger] .s-word {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: bottom;
+      line-height: 1.1;
+    }
+
+    [data-stagger] .s-word .s-inner {
+      display: inline-block;
+      transform: translateY(100%);
+      opacity: 0;
+      transition:
+        transform 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity   0.8s ease-out;
+      will-change: transform, opacity;
+    }
+
+    [data-stagger].is-visible .s-word .s-inner {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    [data-stagger].is-visible .s-word:nth-child(1)  .s-inner { transition-delay: 0.00s; }
+    [data-stagger].is-visible .s-word:nth-child(2)  .s-inner { transition-delay: 0.09s; }
+    [data-stagger].is-visible .s-word:nth-child(3)  .s-inner { transition-delay: 0.18s; }
+    [data-stagger].is-visible .s-word:nth-child(4)  .s-inner { transition-delay: 0.27s; }
+    [data-stagger].is-visible .s-word:nth-child(5)  .s-inner { transition-delay: 0.36s; }
+    [data-stagger].is-visible .s-word:nth-child(6)  .s-inner { transition-delay: 0.45s; }
+    [data-stagger].is-visible .s-word:nth-child(7)  .s-inner { transition-delay: 0.54s; }
+    [data-stagger].is-visible .s-word:nth-child(8)  .s-inner { transition-delay: 0.63s; }
+    [data-stagger].is-visible .s-word:nth-child(9)  .s-inner { transition-delay: 0.72s; }
+    [data-stagger].is-visible .s-word:nth-child(10) .s-inner { transition-delay: 0.81s; }
+
+    /* ============================================
+       技法F — 水平スクロールトラック
+       ============================================ */
+    .h-track {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 1.5rem;
+      padding: 2rem 5vw 3rem;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .h-track::-webkit-scrollbar { display: none; }
+
+    @media (min-width: 768px) {
+      .h-track {
+        padding: 3rem 8vw 4rem;
+        gap: 2rem;
+      }
+    }
+
+    .h-track-card {
+      scroll-snap-align: start;
+      scroll-snap-stop: normal;
+      flex: 0 0 min(280px, 72vw);
+      aspect-ratio: 3 / 4;
+      background-color: var(--bg-card);
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      position: relative;
+      transition:
+        transform     0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow    0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color  0.5s ease-out;
+      will-change: transform, box-shadow;
+    }
+
+    @media (min-width: 768px) {
+      .h-track-card {
+        flex: 0 0 clamp(300px, 28vw, 380px);
+        aspect-ratio: 3 / 4;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .h-track-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-card-hover);
+        border-color: var(--border-accent);
+      }
+    }
+
+    .h-track-card__bg {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    .h-track-card__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(28,21,16,0.2) 0%, rgba(28,21,16,0.75) 60%, rgba(28,21,16,0.92) 100%);
+      z-index: 1;
+    }
+
+    .h-track-card__icon {
+      position: absolute;
+      top: 1.4rem;
+      left: 1.4rem;
+      width: 3rem;
+      height: 3rem;
+      background: rgba(212, 104, 42, 0.18);
+      border: 1px solid var(--border-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      font-size: 1.2rem;
+    }
+
+    .h-track-card__body {
+      position: relative;
+      z-index: 2;
+      padding: 1.4rem 1.6rem 1.8rem;
+    }
+
+    .h-track-card__num {
+      font-family: var(--font-display-en);
+      font-size: clamp(3rem, 6vw, 5rem);
+      color: var(--text-primary);
+      opacity: 0.06;
+      position: absolute;
+      top: -2rem;
+      right: 1rem;
+      line-height: 1;
+      font-weight: 400;
+      z-index: 1;
+    }
+
+    .h-track-card__category {
+      font-family: var(--font-display-en);
+      font-size: 0.65rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .h-track-card__name {
+      font-family: var(--font-display-jp);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+
+    .h-track-card__desc {
+      font-family: var(--font-body-jp);
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    /* ============================================
+       提灯グロー / ボタン
+       ============================================ */
+    .btn-lantern {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--cream);
+      padding: 1rem 2.4rem;
+      font-family: var(--font-display-jp);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      border: none;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition:
+        background-color 0.6s ease-out,
+        box-shadow       0.6s ease-out,
+        transform        0.4s ease-out;
+    }
+
+    .btn-lantern::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(245, 166, 35, 0.4) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+    }
+
+    .btn-lantern:hover {
+      background-color: var(--primary-dark);
+      box-shadow: 0 4px 20px rgba(212, 104, 42, 0.45), 0 12px 40px rgba(212, 104, 42, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .btn-lantern:hover::before { opacity: 1; }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--text-primary);
+      padding: 0.85rem 2rem;
+      font-family: var(--font-display-jp);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      border: 1px solid var(--border-mid);
+      border-radius: 2px;
+      transition: border-color 0.4s ease-out, background 0.4s ease-out, color 0.4s ease-out;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: rgba(212, 104, 42, 0.08);
+      color: var(--primary);
+    }
+
+    /* ============================================
+       セクション共通
+       ============================================ */
+    .section {
+      padding: 6rem 5vw;
+    }
+
+    @media (min-width: 768px) {
+      .section { padding: 9rem 8vw; }
+    }
+
+    .section__eyebrow {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.75rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .section__label {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section__label::after {
+      content: '';
+      flex: 1;
+      max-width: 4rem;
+      height: 1px;
+      background: var(--border-accent);
+    }
+
+    .sep-line {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-mid) 30%, var(--border-accent) 50%, var(--border-mid) 70%, transparent);
+      margin: 0;
+    }
+
+    /* 暖簾セパレーター */
+    .sep-noren {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .sep-noren::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(
+        90deg, transparent,
+        var(--border-mid) 20%,
+        var(--border-accent) 50%,
+        var(--border-mid) 80%,
+        transparent
+      );
+    }
+
+    .sep-noren::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 10%;
+      right: 10%;
+      height: 58px;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent 0px, transparent 4px,
+        var(--bg-card) 4px, var(--bg-card) 36px,
+        transparent 36px, transparent 40px
+      );
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, transparent 100%);
+      -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, transparent 100%);
+    }
+
+    /* ============================================
+       Hero Section
+       ============================================ */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 5vw 10vh;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      #hero { padding: 0 8vw 12vh; }
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/img_hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-color: #2c1a0e;
+      transform: scale(1.05);
+      transition: transform 8s ease-out;
+    }
+
+    .hero__bg.is-loaded {
+      transform: scale(1);
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(28, 21, 16, 0.25) 0%,
+        rgba(28, 21, 16, 0.15) 40%,
+        rgba(28, 21, 16, 0.6)  75%,
+        rgba(28, 21, 16, 0.88) 100%
+      );
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero__eyebrow {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.7rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--primary-light);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero__h1 {
+      font-family: var(--font-old-mincho);
+      font-size: clamp(1.875rem, 7vw, 5rem);
+      font-weight: 700;
+      line-height: 1.3;
+      color: #ffffff;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.9);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero__h1 .h1-line {
+      white-space: nowrap;
+    }
+
+    .hero__sub {
+      font-family: var(--font-body-jp);
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 2.5rem;
+      max-width: 400px;
+    }
+
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero__cta-sub {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--text-muted);
+      transition: color 0.4s ease-out;
+    }
+
+    .hero__cta-sub:hover {
+      color: var(--primary);
+    }
+
+    .hero__scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 5vw;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero__scroll-hint span {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.6rem;
+      letter-spacing: 0.4em;
+      color: var(--text-muted);
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, var(--primary) 0%, transparent 100%);
+      animation: scrollLineFall 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollLineFall {
+      0% { transform: scaleY(0); transform-origin: top; opacity: 1; }
+      50% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+      51% { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+    }
+
+    /* ============================================
+       About Section
+       ============================================ */
+    #about {
+      background-color: var(--bg-mid);
+      position: relative;
+    }
+
+    .about__inner {
+      max-width: 900px;
+    }
+
+    .about__en-heading {
+      font-family: var(--font-display-en);
+      font-size: clamp(1.4rem, 4vw, 2.5rem);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .about__jp-heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .about__body {
+      font-family: var(--font-body-jp);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 2.0;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    .about__features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .about__features {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .about__feature-item {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 3px;
+    }
+
+    .about__feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+      display: block;
+    }
+
+    .about__feature-label {
+      font-family: var(--font-display-jp);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .about__feature-sub {
+      font-family: var(--font-rounded-jp);
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    /* ============================================
+       Scene Section（水平スクロール）
+       ============================================ */
+    #scene {
+      background-color: var(--bg-deepest);
+      overflow: hidden;
+    }
+
+    .scene__header {
+      padding: 6rem 5vw 0;
+    }
+
+    @media (min-width: 768px) {
+      .scene__header { padding: 9rem 8vw 0; }
+    }
+
+    .scene__heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.4rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Scene card background colors */
+    .h-track-card--1 { background: linear-gradient(160deg, #2a1a10 0%, #1c1510 100%); }
+    .h-track-card--2 { background: linear-gradient(160deg, #1a2210 0%, #1c1510 100%); }
+    .h-track-card--3 { background: linear-gradient(160deg, #10182a 0%, #1c1510 100%); }
+    .h-track-card--4 { background: linear-gradient(160deg, #251218 0%, #1c1510 100%); }
+    .h-track-card--5 { background: linear-gradient(160deg, #1e2010 0%, #1c1510 100%); }
+
+    /* ============================================
+       Food Section
+       ============================================ */
+    #food {
+      background-color: var(--bg-mid);
+    }
+
+    .food__heading-en {
+      font-family: var(--font-display-en);
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .food__heading-jp {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .food__body {
+      font-family: var(--font-body-jp);
+      font-size: 0.9375rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 2.0;
+      max-width: 540px;
+      margin-bottom: 3rem;
+    }
+
+    .food__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .food__grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .food-card {
+      position: relative;
+      background-color: var(--bg-card);
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      cursor: pointer;
+      transition:
+        transform     0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow    0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color  0.6s ease-out;
+      will-change: transform, box-shadow;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .food-card:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 16px 40px rgba(0,0,0,0.65), 0 0 24px rgba(212,104,42,0.22), 0 4px 12px rgba(0,0,0,0.3);
+        border-color: var(--border-accent);
+      }
+    }
+
+    .food-card__image {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+
+    .food-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .food-card:hover .food-card__image img { transform: scale(1.08); }
+    }
+
+    .food-card__image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(28,21,16,0.45) 100%);
+      transition: opacity 0.7s ease-out;
+    }
+
+    .food-card__image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(212,104,42,0.15) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 1.0s ease-out;
+      z-index: 1;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .food-card:hover .food-card__image::before { opacity: 1; }
+    }
+
+    .food-card__body {
+      padding: 1.2rem 1.4rem 1.6rem;
+    }
+
+    .food-card__category {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .food-card__name {
+      font-family: var(--font-display-jp);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .food-card__desc {
+      font-family: var(--font-body-jp);
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    .food__instagram-cta {
+      text-align: center;
+      padding: 2.5rem;
+      border: 1px solid var(--border-mid);
+      border-radius: 4px;
+      background: var(--bg-card);
+    }
+
+    .food__instagram-cta p {
+      font-family: var(--font-body-jp);
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    /* ============================================
+       Interior Section
+       ============================================ */
+    #interior {
+      background-color: var(--bg-deepest);
+    }
+
+    .interior__heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .interior__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .interior__grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .interior-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .interior-card__image {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .interior-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .interior-card:hover .interior-card__image img { transform: scale(1.05); }
+    }
+
+    .interior-card__body {
+      padding: 1.5rem;
+      background: var(--bg-card);
+    }
+
+    .interior-card__label {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .interior-card__title {
+      font-family: var(--font-display-jp);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .interior-card__desc {
+      font-family: var(--font-body-jp);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.9;
+    }
+
+    .interior__karaoke {
+      padding: 2rem;
+      border: 1px solid var(--border-accent);
+      border-radius: 4px;
+      background: rgba(212, 104, 42, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .interior__karaoke-icon {
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    .interior__karaoke-text {
+      font-family: var(--font-display-jp);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .interior__karaoke-sub {
+      font-family: var(--font-body-jp);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+    }
+
+    /* ============================================
+       Message Section（母ちゃんからひとこと）
+       ============================================ */
+    #message {
+      background-color: var(--bg-mid);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #message::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      max-width: 600px;
+      max-height: 600px;
+      background: radial-gradient(ellipse at center, rgba(212,104,42,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .message__en-heading {
+      font-family: var(--font-display-en);
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .message__quote {
+      position: relative;
+      padding: 0 0 0 2rem;
+      border-left: 2px solid var(--border-accent);
+    }
+
+    .message__text {
+      font-family: var(--font-kurenaido);
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      color: var(--text-primary);
+      line-height: 2.1;
+      max-width: 680px;
+    }
+
+    .message__sign {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .message__sign-name {
+      font-family: var(--font-old-mincho);
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.2em;
+    }
+
+    .message__sign-line {
+      flex: 1;
+      max-width: 4rem;
+      height: 1px;
+      background: var(--border-mid);
+    }
+
+    /* ============================================
+       Info Section（お店の情報）
+       ============================================ */
+    #info {
+      background-color: var(--bg-deepest);
+    }
+
+    .info__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      max-width: 900px;
+    }
+
+    @media (min-width: 768px) {
+      .info__grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .info__heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 2.5rem;
+    }
+
+    .info__table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info__table tr {
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .info__table th {
+      font-family: var(--font-display-jp);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      padding: 1rem 1rem 1rem 0;
+      text-align: left;
+      vertical-align: top;
+      white-space: nowrap;
+      width: 7rem;
+    }
+
+    .info__table td {
+      font-family: var(--font-body-jp);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      padding: 1rem 0;
+      line-height: 1.8;
+    }
+
+    .badge-cash {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(212, 104, 42, 0.18);
+      border: 1px solid var(--primary);
+      color: var(--primary-light);
+      font-family: var(--font-rounded-jp);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.8rem;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    .info__tel-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-glow);
+      font-family: var(--font-display-en);
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      transition: color 0.3s ease-out;
+    }
+
+    .info__tel-link:hover {
+      color: var(--primary-light);
+    }
+
+    .info__cash-note {
+      margin-top: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      background: rgba(212, 104, 42, 0.1);
+      border: 1px solid var(--border-accent);
+      border-radius: 3px;
+      font-family: var(--font-rounded-jp);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--primary-light);
+      line-height: 1.8;
+    }
+
+    /* ============================================
+       Instagram Section
+       ============================================ */
+    #instagram-section {
+      background-color: var(--bg-mid);
+      text-align: center;
+    }
+
+    .instagram__heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.2rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .instagram__lead {
+      font-family: var(--font-body-jp);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .instagram__handle {
+      display: block;
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.8rem;
+      letter-spacing: 0.4em;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+
+    /* ============================================
+       Access Section
+       ============================================ */
+    #access {
+      background-color: var(--bg-deepest);
+    }
+
+    .access__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .access__grid { grid-template-columns: 1fr 1fr; align-items: start; }
+    }
+
+    .access__heading {
+      font-family: var(--font-display-jp);
+      font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+    }
+
+    .access__address {
+      font-family: var(--font-body-jp);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.9;
+      margin-bottom: 1.2rem;
+    }
+
+    .access__hint {
+      font-family: var(--font-body-jp);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      padding: 1.2rem 1.5rem;
+      border-left: 2px solid var(--primary);
+      background: rgba(212, 104, 42, 0.06);
+      border-radius: 0 3px 3px 0;
+      margin-bottom: 2rem;
+    }
+
+    .access__map-wrap {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .access__map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      filter: grayscale(20%) brightness(0.85) contrast(1.1) sepia(15%);
+    }
+
+    /* ============================================
+       Footer
+       ============================================ */
+    #site-footer {
+      background-color: var(--bg-mid);
+      padding: 4rem 5vw 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    @media (min-width: 768px) {
+      #site-footer { padding: 5rem 8vw 3rem; }
+    }
+
+    .footer__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    .footer__brand {
+      flex-shrink: 0;
+    }
+
+    .footer__logo {
+      font-family: var(--font-old-mincho);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 0.15em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer__tagline {
+      font-family: var(--font-kurenaido);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      display: block;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer__links { flex-direction: row; gap: 4rem; }
+    }
+
+    .footer__links-group h4 {
+      font-family: var(--font-display-en);
+      font-style: italic;
+      font-size: 0.65rem;
+      letter-spacing: 0.45em;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .footer__links-group ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer__links-group a {
+      font-family: var(--font-body-jp);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      transition: color 0.3s ease-out;
+    }
+
+    .footer__links-group a:hover { color: var(--primary); }
+
+    .footer__bottom {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer__bottom { flex-direction: row; justify-content: space-between; }
+    }
+
+    .footer__copyright {
+      font-family: var(--font-display-en);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+    }
+
+    /* ============================================
+       モバイルスティッキーフッター
+       ============================================ */
+    #sticky-footer {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      #sticky-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 800;
+        background: rgba(28, 21, 16, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-top: 1px solid var(--border-mid);
+        padding-bottom: env(safe-area-inset-bottom);
+        transform: translateY(100%);
+        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      #sticky-footer.is-visible {
+        transform: translateY(0);
+      }
+
+      .sticky-footer__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        padding: 0.8rem 0.5rem;
+        font-family: var(--font-rounded-jp);
+        font-size: 0.65rem;
+        font-weight: 400;
+        color: var(--text-secondary);
+        border-right: 1px solid var(--border-subtle);
+        transition: background 0.3s ease-out, color 0.3s ease-out;
+        text-decoration: none;
+      }
+
+      .sticky-footer__btn:last-child { border-right: none; }
+
+      .sticky-footer__btn:active {
+        background: rgba(212, 104, 42, 0.12);
+        color: var(--primary);
+      }
+
+      .sticky-footer__icon {
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
+
+    /* ============================================
+       Utility
+       ============================================ */
+    .text-primary   { color: var(--text-primary); }
+    .text-secondary { color: var(--text-secondary); }
+    .text-muted     { color: var(--text-muted); }
+    .text-accent    { color: var(--primary); }
+
+    .washi-bg {
+      position: relative;
+      background-color: var(--bg-deepest);
+    }
+
+    .washi-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(245,240,232,0.015) 3px, rgba(245,240,232,0.015) 4px),
+        repeating-linear-gradient(90deg, transparent 0px, transparent 7px, rgba(245,240,232,0.010) 7px, rgba(245,240,232,0.010) 8px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes lanternFlicker {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      20%  { opacity: 0.85; transform: scale(0.98); }
+      50%  { opacity: 0.95; transform: scale(1.01); }
+      75%  { opacity: 0.88; transform: scale(0.99); }
+    }
+
+    /* Body padding for sticky footer on mobile */
+    @media (max-width: 768px) {
+      body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       ローダー
+       ============================================ -->
+  <div id="loader">
+    <p class="loader__title">郁</p>
+    <p class="loader__subtitle">Obanzai &amp; Home Cooking</p>
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- カスタムカーソル -->
+  <div id="cursor">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ============================================
+       固定ヘッダー
+       ============================================ -->
+  <header id="site-header">
+    <a href="#hero" class="header__logo">
+      郁 <em>-aya-</em>
+      <span>Obanzai Tokushima</span>
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li><a href="#about">について</a></li>
+        <li><a href="#scene">シーン</a></li>
+        <li><a href="#food">料理</a></li>
+        <li><a href="#interior">店内</a></li>
+        <li><a href="#info">情報</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+    <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" class="header__instagram">
+      Instagram
+    </a>
+    <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ============================================
+       モバイルメニュー
+       ============================================ -->
+  <div id="mobile-menu" aria-hidden="true">
+    <nav>
+      <ul class="mobile-menu__nav">
+        <li><a href="#about" class="mobile-nav-link">郁とは</a></li>
+        <li><a href="#scene" class="mobile-nav-link">こんな夜に</a></li>
+        <li><a href="#food" class="mobile-nav-link">料理・おばんざい</a></li>
+        <li><a href="#interior" class="mobile-nav-link">店内・雰囲気</a></li>
+        <li><a href="#info" class="mobile-nav-link">お店の情報</a></li>
+        <li><a href="#access" class="mobile-nav-link">アクセス</a></li>
+        <li><a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>Obanzai Aya — Tokushima Takaショ</p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       Hero
+       ============================================ -->
+  <section id="hero" aria-label="ヒーロー">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-stagger>徳島・鷹匠町の裏路地から</p>
+
+      <h1 class="hero__h1">
+        <span data-clip><span class="clip-inner h1-line">裏路地に灯る、</span></span>
+        <span data-clip><span class="clip-inner h1-line">母ちゃんの台所。</span></span>
+      </h1>
+
+      <p class="hero__sub" data-fade data-delay="2">
+        ひとりでも、ふらっと寄っても。<br>
+        日替わりのおばんざいと、深夜まで続く温かい灯り。
+      </p>
+
+      <div class="hero__cta" data-fade data-delay="3">
+        <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" class="btn-lantern">
+          今日のおばんざいを見る
+        </a>
+        <a href="#about" class="hero__cta-sub">
+          Instagramで最新情報を確認 →
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="sep-noren"></div>
+
+  <!-- ============================================
+       About
+       ============================================ -->
+  <section id="about" class="section" aria-label="おばんざい郁とは">
+    <div class="about__inner">
+      <div class="section__label">
+        <span class="section__eyebrow" data-stagger>About</span>
+      </div>
+
+      <div data-clip="horizontal">
+        <span class="clip-inner about__en-heading">A KITCHEN IN THE BACK ALLEY</span>
+      </div>
+
+      <div data-clip>
+        <span class="clip-inner about__jp-heading">鷹匠町の裏路地、母ちゃんがひとりで営む居酒屋</span>
+      </div>
+
+      <p class="about__body" data-warp>
+        徳島市鷹匠町のレンガ横丁ビル、その1階。カウンターに7席だけのこじんまりとした空間で、母ちゃんがひとりで仕込みから接客まで全部やっています。日替わりのおばんざいとおでんが目の前に並ぶ、家庭料理の居酒屋です。
+      </p>
+
+      <div class="about__features">
+        <div class="about__feature-item" data-warp data-delay="1">
+          <span class="about__feature-icon">🍱</span>
+          <span class="about__feature-label">日替わりおばんざい</span>
+          <span class="about__feature-sub">毎日丁寧に仕込む</span>
+        </div>
+        <div class="about__feature-item" data-warp data-delay="2">
+          <span class="about__feature-icon">🍶</span>
+          <span class="about__feature-label">カウンター7席</span>
+          <span class="about__feature-sub">おひとり様歓迎</span>
+        </div>
+        <div class="about__feature-item" data-warp data-delay="3">
+          <span class="about__feature-icon">🏯</span>
+          <span class="about__feature-label">2階座敷あり</span>
+          <span class="about__feature-sub">少人数のお集まりに</span>
+        </div>
+        <div class="about__feature-item" data-warp data-delay="4">
+          <span class="about__feature-icon">🌙</span>
+          <span class="about__feature-label">深夜26時まで</span>
+          <span class="about__feature-sub">1軒目にも3軒目にも</span>
+        </div>
+        <div class="about__feature-item" data-warp data-delay="5">
+          <span class="about__feature-icon">🎤</span>
+          <span class="about__feature-label">カラオケ完備</span>
+          <span class="about__feature-sub">1Fも2Fも歌える</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep-line"></div>
+
+  <!-- ============================================
+       Scene（水平スクロール）
+       ============================================ -->
+  <section id="scene" aria-label="こんな方におすすめ">
+    <div class="scene__header">
+      <div class="section__label">
+        <span class="section__eyebrow" data-stagger>For You</span>
+      </div>
+      <div data-clip>
+        <span class="clip-inner scene__heading">こんな夜に、ちょうどいい</span>
+      </div>
+    </div>
+
+    <div class="h-track" id="sceneTrack">
+
+      <!-- Card 1 -->
+      <div class="h-track-card h-track-card--1">
+        <div class="h-track-card__overlay"></div>
+        <div class="h-track-card__icon">🍺</div>
+        <div class="h-track-card__body">
+          <span class="h-track-card__num">01</span>
+          <span class="h-track-card__category">Solo Drinking</span>
+          <h3 class="h-track-card__name">ひとりで、ゆっくり</h3>
+          <p class="h-track-card__desc">カウンターに座ってひとり飲み。隣を気にしなくていい夜に。</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="h-track-card h-track-card--2">
+        <div class="h-track-card__overlay"></div>
+        <div class="h-track-card__icon">🍽</div>
+        <div class="h-track-card__body">
+          <span class="h-track-card__num">02</span>
+          <span class="h-track-card__category">After Work</span>
+          <h3 class="h-track-card__name">仕事帰りのごはん</h3>
+          <p class="h-track-card__desc">ちゃんとしたものが食べたい。1軒目にも使える食事居酒屋。</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="h-track-card h-track-card--3">
+        <div class="h-track-card__overlay"></div>
+        <div class="h-track-card__icon">🌜</div>
+        <div class="h-track-card__body">
+          <span class="h-track-card__num">03</span>
+          <span class="h-track-card__category">Late Night</span>
+          <h3 class="h-track-card__name">深夜、もう一軒</h3>
+          <p class="h-track-card__desc">2軒目・3軒目、深夜26時まで営業しているから終電後でも大丈夫。</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="h-track-card h-track-card--4">
+        <div class="h-track-card__overlay"></div>
+        <div class="h-track-card__icon">🗾</div>
+        <div class="h-track-card__body">
+          <span class="h-track-card__num">04</span>
+          <span class="h-track-card__category">Travel</span>
+          <h3 class="h-track-card__name">旅先で地元の味を</h3>
+          <p class="h-track-card__desc">徳島で本物の家庭料理に出会いたい。出張・旅行中の一杯にも。</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="h-track-card h-track-card--5">
+        <div class="h-track-card__overlay"></div>
+        <div class="h-track-card__icon">👥</div>
+        <div class="h-track-card__body">
+          <span class="h-track-card__num">05</span>
+          <span class="h-track-card__category">Private Room</span>
+          <h3 class="h-track-card__name">少人数でお座敷を</h3>
+          <p class="h-track-card__desc">歓送迎会・誕生会など、気軽な集まりは2階のお座敷でどうぞ。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sep-noren"></div>
+
+  <!-- ============================================
+       Food
+       ============================================ -->
+  <section id="food" class="section" aria-label="おばんざい・料理">
+    <div class="section__label">
+      <span class="section__eyebrow" data-stagger>Food &amp; Obanzai</span>
+    </div>
+
+    <div data-clip="horizontal">
+      <span class="clip-inner food__heading-en">HOME COOKING, MADE WITH PRIDE</span>
+    </div>
+
+    <div data-clip>
+      <span class="clip-inner food__heading-jp">家庭料理を、舐めてもらっちゃ困ります。</span>
+    </div>
+
+    <p class="food__body" data-warp>
+      毎日仕込む日替わりのおばんざいは、チェーン居酒屋では出せないもの。おでんも、小鉢も、母ちゃんが丁寧に作っています。今日の料理はInstagramでどうぞ。
+    </p>
+
+    <div class="food__grid">
+      <div class="food-card" data-warp data-delay="1">
+        <div class="food-card__image">
+          <img src="images/img_food1.png"
+               alt="おばんざい郁の日替わりおばんざい — 彩り豊かな家庭料理の盛り付け"
+               loading="lazy">
+        </div>
+        <div class="food-card__body">
+          <span class="food-card__category">Obanzai</span>
+          <h3 class="food-card__name">日替わりおばんざい</h3>
+          <p class="food-card__desc">その日の仕入れと気分で変わる小鉢たち。カウンターに並ぶ様子が、ここに来る理由のひとつ。</p>
+        </div>
+      </div>
+
+      <div class="food-card" data-warp data-delay="2">
+        <div class="food-card__image">
+          <img src="images/img_food2.png"
+               alt="おばんざい郁の旬のお刺身 — その日仕入れた鮮魚の盛り合わせ"
+               loading="lazy">
+        </div>
+        <div class="food-card__body">
+          <span class="food-card__category">Seasonal Sashimi</span>
+          <h3 class="food-card__name">旬のお刺身</h3>
+          <p class="food-card__desc">その日仕入れた旬の鮮魚を、丁寧に揃えた一皿。何が並ぶかは今夜のお楽しみです。</p>
+        </div>
+      </div>
+
+      <div class="food-card" data-warp data-delay="3">
+        <div class="food-card__image">
+          <img src="images/img_food3.png"
+               alt="おばんざい郁の本格家庭料理 — 暖かい照明のもと丁寧に盛り付けられた一皿"
+               loading="lazy">
+        </div>
+        <div class="food-card__body">
+          <span class="food-card__category">Home Cooking</span>
+          <h3 class="food-card__name">本格家庭料理</h3>
+          <p class="food-card__desc">六人の子を育てた台所から生まれる味。テクニックより愛情、というやつです。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="food__instagram-cta" data-warp>
+      <p>今夜のおばんざい、もうチェックしましたか？<br>日替わりメニューはInstagramで毎日更新中。</p>
+      <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" class="btn-lantern">
+        Instagramを見る
+      </a>
+      <span class="instagram__handle">@mamakitchen0109</span>
+    </div>
+  </section>
+
+  <div class="sep-line"></div>
+
+  <!-- ============================================
+       Interior
+       ============================================ -->
+  <section id="interior" class="section" aria-label="店内・雰囲気">
+    <div class="section__label">
+      <span class="section__eyebrow" data-stagger>Inside</span>
+    </div>
+
+    <div data-clip>
+      <span class="clip-inner interior__heading">7席のカウンターと、2階のお座敷。</span>
+    </div>
+
+    <div class="interior__grid">
+      <div class="interior-card" data-warp data-delay="1">
+        <div class="interior-card__image">
+          <img src="images/img_counter.png"
+               alt="おばんざい郁 1階カウンター席 — 木のカウンターとあたたかい照明の空間"
+               loading="lazy">
+        </div>
+        <div class="interior-card__body">
+          <span class="interior-card__label">1F Counter</span>
+          <h3 class="interior-card__title">1Fカウンター席</h3>
+          <p class="interior-card__desc">目の前においしそうな料理が並ぶ、カウンター7席。母ちゃんとの距離が近くて、なんだかほっとします。</p>
+        </div>
+      </div>
+
+      <div class="interior-card" data-warp data-delay="2">
+        <div class="interior-card__image">
+          <img src="images/img5.png"
+               alt="おばんざい郁 2階座敷 — 落ち着いた雰囲気のお座敷席（2部屋・最大10名）"
+               loading="lazy">
+        </div>
+        <div class="interior-card__body">
+          <span class="interior-card__label">2F Tatami Room</span>
+          <h3 class="interior-card__title">2F座敷席</h3>
+          <p class="interior-card__desc">2階にはお座敷が2部屋。少人数でゆっくり使いたいときは、階段を上がってみてください。（予約方法は店舗へお問い合わせください）</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="interior__karaoke" data-warp>
+      <div class="interior__karaoke-icon">🎤</div>
+      <div>
+        <span class="interior__karaoke-text">1階・2階ともカラオケあり。歌いたい夜にも。</span>
+        <span class="interior__karaoke-sub">BGMは歌謡曲。昭和の名曲と一緒に、温かい夜を。</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep-noren"></div>
+
+  <!-- ============================================
+       Message（母ちゃんからひとこと）
+       ============================================ -->
+  <section id="message" class="section" aria-label="母ちゃんからひとこと">
+    <div class="section__label">
+      <span class="section__eyebrow" data-stagger>From the Kitchen</span>
+    </div>
+
+    <div data-clip="horizontal">
+      <span class="clip-inner message__en-heading">A WORD FROM MAMA</span>
+    </div>
+
+    <div class="message__quote" data-warp>
+      <p class="message__text">
+        いらっしゃい、って言うより「おかえり」って言いたいんですよね、本当は。ひとりでふらっと入ってきてくれても、大人数でわいわいしてくれても、どっちも同じくらい嬉しい。おばんざいはその日その日で変わりますけど、おいしいものを出したいっていう気持ちは毎日変わりません。気軽に寄ってください、待ってます。
+      </p>
+      <div class="message__sign">
+        <div class="message__sign-line"></div>
+        <span class="message__sign-name">おばんざい郁 母ちゃんより</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep-line"></div>
+
+  <!-- ============================================
+       Info（お店の情報）
+       ============================================ -->
+  <section id="info" class="section" aria-label="お店の情報">
+    <div class="section__label">
+      <span class="section__eyebrow" data-stagger>Info</span>
+    </div>
+
+    <div data-clip>
+      <span class="clip-inner info__heading">お店の情報</span>
+    </div>
+
+    <div class="info__grid">
+      <div>
+        <table class="info__table" data-warp>
+          <tr>
+            <th>営業時間</th>
+            <td>18:00頃〜26:00<br><small style="font-size:0.78rem;color:var(--text-muted);">最新情報はInstagramで</small></td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>日曜定休<br><small style="font-size:0.78rem;color:var(--text-muted);">月曜は不定休・Instagramでご確認ください</small></td>
+          </tr>
+          <tr>
+            <th>電話</th>
+            <td>
+              <a href="tel:080-3532-1398" class="info__tel-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.8 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z"/></svg>
+                080-3532-1398
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>予算</th>
+            <td>2,000〜3,000円</td>
+          </tr>
+          <tr>
+            <th>お支払い</th>
+            <td>
+              <span class="badge-cash">⚠ 現金のみ</span><br>
+              <small style="font-size:0.75rem;color:var(--text-muted);display:block;margin-top:0.4rem;">カード・電子決済不可</small>
+            </td>
+          </tr>
+          <tr>
+            <th>席数</th>
+            <td>1F カウンター7席<br>2F 座敷2部屋（最大10名）</td>
+          </tr>
+          <tr>
+            <th>カラオケ</th>
+            <td>1階・2階ともあり</td>
+          </tr>
+          <tr>
+            <th>ボトルキープ</th>
+            <td>あり</td>
+          </tr>
+          <tr>
+            <th>Instagram</th>
+            <td>
+              <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" style="color:var(--primary);font-family:var(--font-display-en);font-style:italic;">
+                @mamakitchen0109
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <div class="info__cash-note" data-warp>
+          ⚠ お支払いは現金のみです。近くのATMは事前にお済ませください。カード・電子マネーはご利用いただけません。
+        </div>
+      </div>
+
+      <div data-warp data-delay="2">
+        <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:4px;overflow:hidden;">
+          <img src="images/img2.png"
+               alt="提灯の灯る夜の路地 — 鷹匠町の裏路地、レンガ横丁への入口イメージ"
+               style="width:100%;height:auto;object-fit:cover;aspect-ratio:4/3;"
+               loading="lazy">
+          <div style="padding:1.5rem;">
+            <p style="font-family:var(--font-kurenaido);font-size:1rem;color:var(--text-secondary);line-height:1.9;">
+              裏路地に灯る、<br>母ちゃんの台所。<br>今夜も、おかえり。
+            </p>
+            <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener"
+               style="display:inline-block;margin-top:1.2rem;font-family:var(--font-display-en);font-style:italic;font-size:0.75rem;letter-spacing:0.4em;color:var(--primary);">
+              Follow @mamakitchen0109 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep-noren"></div>
+
+  <!-- ============================================
+       Instagram Section
+       ============================================ -->
+  <section id="instagram-section" class="section" aria-label="Instagram最新情報">
+    <div class="section__label" style="justify-content:center;">
+      <span class="section__eyebrow" data-stagger>Latest News</span>
+    </div>
+
+    <div data-clip style="text-align:center;">
+      <span class="clip-inner instagram__heading">今日のおばんざい、Instagramでチェック。</span>
+    </div>
+
+    <p class="instagram__lead" data-warp>
+      日替わりメニュー・営業情報・臨時休業のお知らせはInstagramが一番早いです。
+    </p>
+
+    <div data-fade data-delay="2">
+      <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" class="btn-lantern">
+        Instagramを見る（@mamakitchen0109）
+      </a>
+    </div>
+  </section>
+
+  <div class="sep-line"></div>
+
+  <!-- ============================================
+       Access
+       ============================================ -->
+  <section id="access" class="section" aria-label="アクセス">
+    <div class="section__label">
+      <span class="section__eyebrow" data-stagger>Access</span>
+    </div>
+
+    <div class="access__grid">
+      <div>
+        <div data-clip>
+          <span class="clip-inner access__heading">迷ったらそれが正解です。</span>
+        </div>
+
+        <p class="access__address" data-warp>
+          〒770-0841<br>
+          徳島県徳島市鷹匠町1丁目29番地<br>
+          レンガ横丁ビル1F
+        </p>
+
+        <div class="access__hint" data-warp data-delay="1">
+          鷹匠町の裏路地、レンガ横丁ビルの1階が目印。少し迷うくらいが、ちょうどいい隠れ家です。
+        </div>
+
+        <div data-fade data-delay="2">
+          <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E9%83%81+aya+%E5%BE%B3%E5%B3%B6%E5%B8%82%E9%B7%B9%E5%8C%A0%E7%94%BA1%E4%B8%81%E7%9B%AE29%E7%95%AA%E5%9C%B0+%E3%83%AC%E3%83%B3%E3%82%AC%E6%A8%AA%E4%B8%81%E3%83%93%E3%83%AB" target="_blank" rel="noopener" class="btn-outline" style="margin-right:1rem;margin-bottom:0.8rem;display:inline-block;">
+            Googleマップで開く
+          </a>
+          <a href="tel:080-3532-1398" class="btn-outline" style="display:inline-block;">
+            電話する
+          </a>
+        </div>
+      </div>
+
+      <div data-warp data-delay="2">
+        <div class="access__map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E9%83%81+aya+%E5%BE%B3%E5%B3%B6%E5%B8%82%E9%B7%B9%E5%8C%A0%E7%94%BA1%E4%B8%81%E7%9B%AE29%E7%95%AA%E5%9C%B0+%E3%83%AC%E3%83%B3%E3%82%AC%E6%A8%AA%E4%B8%81%E3%83%93%E3%83%AB1F&output=embed&hl=ja"
+            title="おばんざい郁 -aya- 地図"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer id="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">郁 <em style="font-family:var(--font-display-en);font-style:italic;font-size:1rem;font-weight:300;letter-spacing:0.1em;">-aya-</em></span>
+        <span class="footer__tagline">裏路地に灯る、母ちゃんの台所。</span>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__links-group">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#about">郁とは</a></li>
+            <li><a href="#scene">こんな夜に</a></li>
+            <li><a href="#food">料理・おばんざい</a></li>
+            <li><a href="#interior">店内・雰囲気</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="#info">お店の情報</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="tel:080-3532-1398">電話する</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 おばんざい郁 -aya-. All rights reserved.</p>
+      <p style="font-family:var(--font-display-en);font-style:italic;font-size:0.65rem;letter-spacing:0.3em;color:var(--text-muted);">
+        Tokushima · Takasho-machi · Renga Yokocho Bldg 1F
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       モバイルスティッキーフッター
+       ============================================ -->
+  <div id="sticky-footer">
+    <a href="tel:080-3532-1398" class="sticky-footer__btn">
+      <span class="sticky-footer__icon">📞</span>
+      <span>電話する</span>
+    </a>
+    <a href="https://www.instagram.com/mamakitchen0109/" target="_blank" rel="noopener" class="sticky-footer__btn">
+      <span class="sticky-footer__icon">📷</span>
+      <span>Instagram</span>
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E9%83%81+aya+%E5%BE%B3%E5%B3%B6%E5%B8%82%E9%B7%B9%E5%8C%A0%E7%94%BA1%E4%B8%81%E7%9B%AE29%E7%95%AA%E5%9C%B0+%E3%83%AC%E3%83%B3%E3%82%AC%E6%A8%AA%E4%B8%81%E3%83%93%E3%83%AB" target="_blank" rel="noopener" class="sticky-footer__btn">
+      <span class="sticky-footer__icon">🗺</span>
+      <span>地図</span>
+    </a>
+  </div>
+
+  <!-- ============================================
+       JavaScript
+       ============================================ -->
+  <script>
+  (function() {
+    'use strict';
+
+    // ============================================
+    // 1. ワードスタガー自動分割（最初に実行）
+    // ============================================
+    document.querySelectorAll('[data-stagger]').forEach(function(el) {
+      var text = el.textContent.trim();
+      var isChar = el.dataset.stagger === 'char';
+
+      if (isChar) {
+        el.innerHTML = Array.from(text).map(function(c) {
+          return c === ' '
+            ? '<span style="display:inline-block;width:0.3em"></span>'
+            : '<span class="s-char"><span class="s-inner">' + c + '</span></span>';
+        }).join('');
+      } else {
+        var words = text.split(/\s+/).filter(function(w) { return w.length > 0; });
+        el.innerHTML = words.map(function(w) {
+          return '<span class="s-word"><span class="s-inner">' + w + '</span></span>';
+        }).join('<span style="display:inline-block;width:0.25em"></span>');
+      }
+
+      var items = el.querySelectorAll(isChar ? '.s-char .s-inner' : '.s-word .s-inner');
+      items.forEach(function(item, idx) {
+        item.style.transitionDelay = (idx * 0.09) + 's';
+      });
+    });
+
+    // ============================================
+    // 2. IntersectionObserver（hero内要素は除外）
+    // ============================================
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          // hero内の要素はローダー後にtriggerHeroAnimationsで処理
+          if (!entry.target.closest('#hero')) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -48px 0px'
+    });
+
+    document.querySelectorAll('[data-warp], [data-fade], [data-clip], [data-stagger]').forEach(function(el) {
+      revealObserver.observe(el);
+    });
+
+    // ============================================
+    // 3. Hero アニメーション トリガー
+    // ============================================
+    function triggerHeroAnimations() {
+      // eyebrow stagger
+      var heroStagger = document.querySelector('#hero [data-stagger]');
+      if (heroStagger) heroStagger.classList.add('is-visible');
+
+      // h1 clip-path lines with stagger
+      var heroClips = document.querySelectorAll('#hero [data-clip]');
+      heroClips.forEach(function(el, i) {
+        setTimeout(function() {
+          el.classList.add('is-visible');
+        }, i * 200);
+      });
+
+      // fade elements
+      var heroFades = document.querySelectorAll('#hero [data-fade]');
+      heroFades.forEach(function(el) {
+        el.classList.add('is-visible');
+      });
+
+      // hero bg zoom in
+      var heroBg = document.getElementById('heroBg');
+      if (heroBg) heroBg.classList.add('is-loaded');
+    }
+
+    // ============================================
+    // 4. ローダー制御（MIN 2200ms）
+    // ============================================
+    var loaderStartTime = Date.now();
+    var MIN_LOADER_MS = 2200;
+
+    window.addEventListener('load', function() {
+      var elapsed = Date.now() - loaderStartTime;
+      var remaining = Math.max(0, MIN_LOADER_MS - elapsed);
+
+      setTimeout(function() {
+        var loader = document.getElementById('loader');
+        if (loader) {
+          loader.classList.add('is-done');
+          setTimeout(triggerHeroAnimations, 300);
+        }
+      }, remaining);
+    });
+
+    // Fallback if load never fires
+    setTimeout(function() {
+      var loader = document.getElementById('loader');
+      if (loader && !loader.classList.contains('is-done')) {
+        loader.classList.add('is-done');
+        setTimeout(triggerHeroAnimations, 300);
+      }
+    }, 4000);
+
+    // ============================================
+    // 5. カスタムカーソル（pointer:fine + RAF、lag係数0.10）
+    // ============================================
+    if (window.matchMedia('(pointer: fine)').matches) {
+      var cursorEl = document.getElementById('cursor');
+      if (cursorEl) {
+        var ring = cursorEl.querySelector('.cursor__ring');
+        var dot  = cursorEl.querySelector('.cursor__dot');
+        var mouseX = window.innerWidth / 2;
+        var mouseY = window.innerHeight / 2;
+        var ringX = mouseX;
+        var ringY = mouseY;
+
+        document.addEventListener('mousemove', function(e) {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          if (dot) dot.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+        });
+
+        (function animateCursor() {
+          ringX += (mouseX - ringX) * 0.10;
+          ringY += (mouseY - ringY) * 0.10;
+          if (ring) ring.style.transform = 'translate(' + ringX + 'px, ' + ringY + 'px)';
+          requestAnimationFrame(animateCursor);
+        })();
+
+        var hoverTargets = document.querySelectorAll('a, button, [role="button"], .food-card, .h-track-card');
+        hoverTargets.forEach(function(el) {
+          el.addEventListener('mouseenter', function() { document.body.classList.add('cursor-hover'); });
+          el.addEventListener('mouseleave', function() { document.body.classList.remove('cursor-hover'); });
+        });
+
+        document.addEventListener('mousedown', function() { document.body.classList.add('cursor-click'); });
+        document.addEventListener('mouseup',   function() { document.body.classList.remove('cursor-click'); });
+        document.addEventListener('mouseleave', function() { document.body.classList.add('cursor-hidden'); });
+        document.addEventListener('mouseenter', function() { document.body.classList.remove('cursor-hidden'); });
+      }
+    }
+
+    // ============================================
+    // 6. ヘッダー スクロール変化
+    // ============================================
+    var header = document.getElementById('site-header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // ============================================
+    // 7. ハンバーガーメニュー
+    // ============================================
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    hamburger.addEventListener('click', function() {
+      var isOpen = mobileMenu.classList.contains('is-open');
+      if (isOpen) {
+        mobileMenu.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      } else {
+        mobileMenu.classList.add('is-open');
+        hamburger.classList.add('is-open');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    mobileNavLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ============================================
+    // 8. スムーズスクロール
+    // ============================================
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          var headerHeight = document.getElementById('site-header').offsetHeight;
+          var targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ============================================
+    // 9. 水平スクロール ドラッグ
+    // ============================================
+    var track = document.getElementById('sceneTrack');
+    if (track) {
+      var isDown = false;
+      var startX, scrollLeft;
+
+      track.style.cursor = 'grab';
+
+      track.addEventListener('mousedown', function(e) {
+        isDown = true;
+        track.style.cursor = 'grabbing';
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+        e.preventDefault();
+      });
+
+      track.addEventListener('mouseleave', function() {
+        isDown = false;
+        track.style.cursor = 'grab';
+      });
+
+      track.addEventListener('mouseup', function() {
+        isDown = false;
+        track.style.cursor = 'grab';
+      });
+
+      track.addEventListener('mousemove', function(e) {
+        if (!isDown) return;
+        e.preventDefault();
+        var x = e.pageX - track.offsetLeft;
+        track.scrollLeft = scrollLeft - (x - startX) * 1.2;
+      });
+    }
+
+    // ============================================
+    // 10. モバイルスティッキーフッター（scrollY > 50）
+    // ============================================
+    var stickyFooter = document.getElementById('sticky-footer');
+    if (stickyFooter) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          stickyFooter.classList.add('is-visible');
+        } else {
+          stickyFooter.classList.remove('is-visible');
+        }
+      }, { passive: true });
+    }
+
+  })();
+  </script>
+
+</body>
+</html>
