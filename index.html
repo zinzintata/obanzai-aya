@@ -969,10 +969,14 @@
       inset: 0;
       background-image: url('img_hero.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: 75% center;
       background-color: #2c1a0e;
       transform: scale(1.05);
       transition: transform 8s ease-out;
+    }
+
+    @media (min-width: 768px) {
+      .hero__bg { background-position: center; }
     }
 
     .hero__bg.is-loaded {
